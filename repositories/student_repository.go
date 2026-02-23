@@ -47,3 +47,19 @@ func (r *StudentRepository) Create(s models.Student) error {
 	)
 	return err
 }
+
+func (r *StudentRepository) Update(id string, s models.Student) error {
+    result, err := r.DB.Exec(
+        "UPDATE students SET name = ?, major = ?, gpa = ? WHERE id = ?",
+        s.Name, s.Major, s.GPA, id,
+    )
+    if err != nil {
+        return err
+    }
+    
+    rows, _ := result.RowsAffected()
+    if rows == 0 {
+        return sql.ErrNoRows
+    }
+    return nil
+}
