@@ -1,5 +1,6 @@
 # Student API with Gin & SQLite
 
+Suttipot Prathoumthong 6609650699
 A REST API for managing student data, developed using Go, the Gin Framework, and SQLite.
 
 ---
