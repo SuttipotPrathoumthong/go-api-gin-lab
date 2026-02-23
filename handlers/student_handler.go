@@ -56,6 +56,8 @@ func (h *StudentHandler) UpdateStudent(c *gin.Context) {
         return
     }
 
+	student.Id = id
+
     if err := h.Service.UpdateStudent(id, student); err != nil {
         c.JSON(http.StatusNotFound, gin.H{"error": "Student not found"})
         return
