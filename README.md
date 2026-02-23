@@ -1,6 +1,6 @@
 # Student API with Gin & SQLite
 
-REST API สำหรับจัดการข้อมูลนักเรียน พัฒนาด้วยภาษา Go โดยใช้ Gin Framework และ SQLite ตามโครงสร้าง Layered Architecture
+REST API สำหรับจัดการข้อมูลนักเรียน พัฒนาด้วยภาษา Go โดยใช้ Gin Framework และ SQLite
 
 ---
 ## How to run the project
@@ -18,7 +18,7 @@ go mod tidy
 ```bash
 go run main.go
 ```
-ระบบจะเริ่มต้นทำงานที่พอร์ต 8080 โดยอัตโนมัติ
+ระบบจะเริ่มต้นทำงานที่ Port 8080 โดยอัตโนมัติ
 
 ---
 ## Available API Endpoints
